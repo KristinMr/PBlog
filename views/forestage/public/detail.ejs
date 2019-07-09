@@ -1,0 +1,55 @@
+<div class="detail">
+    <div class="detail-loading"></div>
+    <div class="detail-article-wrap">
+        <article class="detail-article-content">
+            <div class="detail-article-inner">
+                <header class="detail-article-header">
+                    <div class="detail-article-header-wrap">
+                        <h1 class="detail-article-title">articleData.articleTitle</h1>
+                        <div class="detail-article-date">
+                            <i class="detail-icon-calendar detail-date-icon"></i>
+                            <span class="detail-date-time">articleData.articleDate</span>
+                        </div>
+                    </div>
+                </header>
+                <div class="detail-article-entry">
+                    <div class="detail-article-data">
+                        <!-- markdown渲染数据 -->
+                        <%- doc%>
+                    </div>
+                    <article-directory></article-directory>
+                    <!-- <a href="" class="article-more">more&nbsp;>></a> -->
+                </div>
+                <div class="detail-article-info">
+                    <div class="detail-article-tag">
+                        <ul class="detail-article-tag-list">
+                            <i class="detail-icon-price-tags detail-article-tag-icon"></i>
+                            <li class="detail-article-tag-list-item">
+                                <a href="javascript:;" class="detail-article-tag-list-link">articleTag.articleTagName</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="detail-article-share">
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <nav class="detail-article-nav">
+        <a href="" class="detail-nav-link">
+            <i class="detail-icon-circle-left detail-link-icon"></i>
+            <span class="detail-link-text">测试1</span>
+        </a>
+        <a href="" class="detail-nav-link">
+            <span class="detail-link-text">测试2</span>
+            <i class="detail-icon-circle-right detail-link-icon"></i>
+        </a>
+    </nav>
+
+    <div class="detail-article-comment">
+        <!-- comment -->
+    </div>
+</div>

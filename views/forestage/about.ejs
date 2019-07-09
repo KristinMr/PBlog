@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<%- include("./public/header.ejs")%>
+<body>
+        <%- include("./public/sidebar.ejs")%>
+        <div class="main" >
+            <div class="about">
+                <div class="about-article-wrap">
+                    <article class="about-article-content">
+                        <div class="about-article-inner">
+                            <header class="about-article-header">
+                                <h1 class="about-article-title"></h1>
+                            </header>
+                            <div class="about-article-entry">
+                                <div class="about-article-data">
+                                    <%- doc%>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <footer class="main-footer">
+                ©&nbsp;{{year}}&nbsp;Kris
+            </footer>
+        </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<% for (var i = 0; i < articles.length; i++) {%>
+<div class="article-list">
+    <div class="article-list-article-item">
+        <div class="article-list-article-inner">
+            <header class="article-list-article-header">
+                <div class="article-list-article-header-wrap">
+                    <a class="article-list-article-title"><%= articles[i].article_title %></a>
+                    <div class="article-list-article-date">
+                        <i class="article-list-icon-calendar article-list-date-icon"></i>
+                        <span class="article-list-date-time"><%= articles[i].article_date.toLocaleDateString() %></span>
+                    </div>
+                </div>
+            </header>
+            <div class="article-list-article-entry">
+                <div class="article-list-article-data">
+                    <!-- markdown渲染数据 -->
+                    <!--<a class="article-list-article-more">{{articleData.articleContent}}</a>-->
+                    <%= doc[i] %>
+                </div>
+            </div>
+            <div class="article-list-article-info">
+                <div class="article-list-article-tag">
+                    <ul class="article-list-article-tag-list">
+                        <i class="article-list-icon-price-tags article-list-article-tag-icon"></i>
+                        <li class="article-list-article-tag-list-item">
+                            <a href="" class="article-list-article-tag-list-link">articleTag.articleTagName</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!--<a class="article-list-article-more-link"></a>-->
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<% } %>
